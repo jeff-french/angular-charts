@@ -424,7 +424,7 @@ angular.module('angularCharts').directive('acChart', [
             top: 0,
             right: -30,
             bottom: 20,
-            left: -300
+            left: -30
           };
         width -= margin.left + margin.right;
         height -= margin.top + margin.bottom;
