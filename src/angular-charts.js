@@ -1,5 +1,4 @@
 
-
 /**
 * Main module
 */
@@ -480,7 +479,7 @@ angular.module('angularCharts').directive('acChart', function($templateCache, $c
      * @return {[type]} [description]
      */
     function areaChart() {
-      var margin = {top: 0, right: 40, bottom: 20, left: 40};
+      var margin = {top: 0, right: -30, bottom: 20, left: -300};
           width -= margin.left + margin.right;
           height -=  margin.top + margin.bottom;
 
@@ -554,6 +553,7 @@ angular.module('angularCharts').directive('acChart', function($templateCache, $c
 
       svg.append("g")
           .attr("class", "y axis")
+          .attr('transform', 'translate(75, -10)')
           .call(yAxis);
 
       var point = svg.selectAll(".points")
